@@ -4,4 +4,5 @@
 #--------------------
 
 data modify storage 6fx:var attack.query set value []
-$data modify storage 6fx:var attack.query append from storage 6fx:settings attack_with_item[{items:[{item:$(item)}]}]
+$data modify storage 6fx:var attack.query append from storage 6fx:settings attack_with_item[{items:[{item:"$(item)"}]}]
+data remove storage 6fx:var attack.query[].items
