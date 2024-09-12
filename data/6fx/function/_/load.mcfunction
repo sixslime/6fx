@@ -21,6 +21,9 @@ scoreboard objectives add -6fx dummy
 scoreboard objectives add --6fx dummy
 #scoreboard objectives add 6fx-scoreboard dummy
 
+# purec
+execute if score *purec load-status matches 1 run function 6fx:_/purec/define
+
 # tick
 schedule clear 6fx:_/tick
 function 6fx:_/tick
